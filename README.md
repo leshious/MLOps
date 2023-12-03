@@ -3,6 +3,12 @@
 ## Introduction
 This repository contains the first homework assignment for the MLOps course. The project focuses on demonstrating the workflow for running machine learning operations efficiently.
 
+## Что реализовал: 
+1. DVC - смог, все работает
+2. Hydra - все круто, все работает
+3. Logging - не завелось(((
+4. Inference - все работает, все круто 
+
 ## Installation
 To run the code, follow these steps:
 
