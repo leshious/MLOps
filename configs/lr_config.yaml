@@ -1,4 +1,4 @@
-# logistic_regression_config.yaml
+# lr_config.yaml
 max_iter: 1000
 penalty: 'l2'
 fit_intercept: true
