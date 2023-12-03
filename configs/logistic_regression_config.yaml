@@ -1,0 +1,11 @@
+# logistic_regression_config.yaml
+max_iter: 1000
+penalty: 'l2'
+fit_intercept: true
+learning_rate: 0.1
+regularization_type: 'l2'
+loss_function: 'log_loss'
+multi_class: 'ovr'
+evaluation_metric: 'accuracy'
+data:
+  data_dir: "data"  # Путь к папке с данными относительно рабочей директории Hydra

@@ -8,10 +8,10 @@ import numpy as np
 
 
 def main():
-    X_train = np.load('data/X_train.npy')
-    X_test = np.load('data/X_test.npy')
-    y_train = np.load('data/y_train.npy')
-    y_test = np.load('data/y_test.npy')
+    X_train = np.load('..data/X_train.npy')
+    X_test = np.load('..data/X_test.npy')
+    y_train = np.load('..data/y_train.npy')
+    y_test = np.load('..data/y_test.npy')
 
     with open("logistic_regression_model.pkl", "rb") as file:
         loaded_model = pickle.load(file)
