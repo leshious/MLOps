@@ -4,17 +4,14 @@ import pandas as pd
 from sklearn import datasets
 from sklearn.metrics import accuracy_score, f1_score, precision_score
 from sklearn.model_selection import train_test_split
+import numpy as np
 
 
 def main():
-    iris = datasets.load_iris()
-    X = iris.data
-    y = iris.target
-
-    # Split the dataset
-    X_train, X_test, y_train, y_test = train_test_split(
-        X, y, test_size=0.5, stratify=y, random_state=42
-    )
+    X_train = np.load('data/X_train.npy')
+    X_test = np.load('data/X_test.npy')
+    y_train = np.load('data/y_train.npy')
+    y_test = np.load('data/y_test.npy')
 
     with open("logistic_regression_model.pkl", "rb") as file:
         loaded_model = pickle.load(file)
