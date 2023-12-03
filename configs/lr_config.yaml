@@ -9,3 +9,5 @@ multi_class: 'ovr'
 evaluation_metric: 'accuracy'
 data:
   data_dir: "data"  # Путь к папке с данными относительно рабочей директории Hydra
+server_uri: 'http://0.0.0.0:5000'
+experiment_name: 'log_reg'
